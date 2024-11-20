@@ -5,7 +5,8 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Cloning the repository
-                git 'https://github.com/gautamdevgrovers/staticwebsite.git'
+                git branch: 'main',
+                    url: 'https://github.com/gautamdevgrovers/staticwebsite.git'
             }
         }
 
