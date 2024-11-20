@@ -21,8 +21,8 @@ pipeline {
             steps {
                 // Copy files to the deployment directory
                 sh '''
-                mkdir -p /var/www/html
-                cp -r * /var/www/html
+                mkdir /tmp/dep
+                cp -r * /tmp/dep
                 '''
             }
         }
